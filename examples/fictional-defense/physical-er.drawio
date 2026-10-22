@@ -1,0 +1,12 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="physical-er" name="物理ER-仅声明约束">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" page="1" pageWidth="1169" pageHeight="827"><root>
+      <mxCell id="0"/><mxCell id="1" parent="0"/>
+      <mxCell id="title" value="物理 ER｜只标已声明 PK；无外键连线" style="text;html=0;fontSize=22;align=left;" vertex="1" parent="1"><mxGeometry x="60" y="50" width="1000" height="50" as="geometry"/></mxCell>
+      <mxCell id="users" value="users&#10;──────────────&#10;id : bigint [PK]&#10;name : varchar(50)" style="rounded=0;whiteSpace=wrap;html=0;fontSize=18;align=left;spacing=16;fillColor=#ffffff;strokeColor=#17385D;" vertex="1" parent="1"><mxGeometry x="60" y="160" width="300" height="220" as="geometry"/></mxCell>
+      <mxCell id="bookings" value="bookings&#10;──────────────&#10;id : bigint [PK]&#10;user_id : bigint [NOT NULL]&#10;equipment_id : bigint [NOT NULL]" style="rounded=0;whiteSpace=wrap;html=0;fontSize=17;align=left;spacing=16;fillColor=#ffffff;strokeColor=#17385D;" vertex="1" parent="1"><mxGeometry x="400" y="160" width="360" height="220" as="geometry"/></mxCell>
+      <mxCell id="equipment" value="equipment&#10;──────────────&#10;id : bigint [PK]&#10;name : varchar(100)" style="rounded=0;whiteSpace=wrap;html=0;fontSize=18;align=left;spacing=16;fillColor=#ffffff;strokeColor=#17385D;" vertex="1" parent="1"><mxGeometry x="800" y="160" width="300" height="220" as="geometry"/></mxCell>
+      <mxCell id="caption" value="来源：用户给定三表声明，见 request-evidence.md。名称列的可空性、默认值和唯一性未声明。&#10;标识列命名可推断业务关联，但不构成数据库外键。实际数据库未访问；本图尚未在 draw.io 渲染验收。" style="text;html=0;fontSize=16;align=left;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="60" y="430" width="1040" height="100" as="geometry"/></mxCell>
+    </root></mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,7 @@
+flowchart LR
+    U["users：用户"] -. "推断：用户可有 0..N 条预约" .-> B["bookings：预约；每条意图关联 1 用户及 1 设备"]
+    E["equipment：设备"] -. "推断：设备可有 0..N 条预约" .-> B
+
+%% Roles: users is intended user_id target; equipment is intended equipment_id target.
+%% Basis: column naming only. NOT NULL does not ensure existence. Not database-enforced cardinality.
+%% Business assumptions awaiting confirmation. Mermaid source not rendered or parser-validated.

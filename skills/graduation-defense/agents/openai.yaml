@@ -1,0 +1,4 @@
+interface:
+  display_name: "毕业设计答辩物料"
+  short_description: "依据项目证据制作毕业答辩图表、PPT讲稿、论文文档和评审问答"
+  default_prompt: "使用 $graduation-defense，先检查我的学校模板和项目材料，再完成本次需要的答辩物料。"

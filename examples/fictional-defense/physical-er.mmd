@@ -1,0 +1,17 @@
+erDiagram
+    USERS {
+        bigint id PK
+        varchar(50) name
+    }
+    BOOKINGS {
+        bigint id PK
+        bigint user_id "NOT NULL; no declared FK"
+        bigint equipment_id "NOT NULL; no declared FK"
+    }
+    EQUIPMENT {
+        bigint id PK
+        varchar(100) name
+    }
+
+%% Source: request-evidence.md. No declared FK, therefore no physical relationship edges.
+%% All fields and exact declared type lengths retained. Mermaid source not rendered or parser-validated.
